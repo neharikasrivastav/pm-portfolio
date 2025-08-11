@@ -169,7 +169,7 @@ function ImpactStats() {
   ];
 
   return (
-    <section className="border-y border-white/10 bg-[color:var(--subtle)]" style={{ ["--subtle" as any]: SUBTLE }}>
+    <section className="border-y border-white/10 bg-[color:var(--subtle)]" style={{ "--subtle": SUBTLE } as React.CSSProperties}>
       <div className="mx-auto max-w-6xl px-4 py-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
         {items.map((it, i) => (
           <motion.div
